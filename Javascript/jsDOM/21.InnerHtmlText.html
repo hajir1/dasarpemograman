@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content">
+        <script>
+            console.log(`Hello world`)
+        </script>
+        <b>Usam</b> <i>Muhajir</i>
+    </div>
+    <div id="testContent">
+
+    </div>
+    <script>
+        {
+        const content = document.getElementById("content")
+        console.log(content.innerHTML)
+        console.log(content.innerText)
+        console.log(content.textContent)
+        }
+        {
+        const content = document.getElementById("testContent")
+        content.textContent ="<h1>Hello World</h1>"
+        content.innerText ="<h1>Hello World</h1>"
+        content.innerHTML ="<h1>Hello World</h1>"
+        }
+    </script>
+</body>
+</html>

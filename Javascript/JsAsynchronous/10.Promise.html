@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="nama">Nama :</p>
+    <p id="password">Password :</p>
+    <script>
+          
+        function getProduct(){
+            return new Promise ((resolve , rejected) => {
+            const ajax = new XMLHttpRequest()
+            ajax.open("GET",`../JSON/belajar1.json`) 
+            ajax.onload = function (){
+                if(ajax.status === 200){
+                    resolve(ajax.responseText)
+                }else{
+                    rejected("Error")
+                }
+            }
+            ajax.send()
+        })
+        }
+
+        getProduct()
+        .then(berhasil =>{
+            const json = JSON.parse(berhasil)
+            document.getElementById("nama").textContent = json.nama
+            document.getElementById("password").textContent = json.password
+        })
+        .catch(error =>{
+            document.getElementById("nama").textContent = error
+            document.getElementById("password").textContent = error
+        })
+        .finally(function(){
+            console.log("Program Selesai")
+        })
+    </script>
+</body>
+</html>

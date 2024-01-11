@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Employee(name){
+            this.name = name
+        }
+
+        function Manager(name){
+            this.name = name
+        }
+
+        Manager.prototype = Object.create(Employee.prototype)
+        
+        Manager.prototype.sayHello = function(value){
+            console.log(`hello ${value}, My Name Is Manager ${this.name}`)
+        }
+        
+        Employee.prototype.sayHello = function(value){
+            console.log(`hello ${value}, My Name Is Employee ${this.name}`)
+        }
+        const employee =new Employee("Usam")
+        employee.sayHello("Ucup")
+
+        const manager =new Manager("Muhajir")
+        manager.sayHello("Ucup")
+        console.log(employee)
+        console.log(manager)
+        </script>
+</body>
+</html>

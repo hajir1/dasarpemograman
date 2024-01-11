@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="nameFrom">
+        <label for="username">Username
+            <input type="text" name="username" >
+        </label>
+        <br>
+        <label for="password">password
+            <input type="text" name="password" >
+        </label>
+        <br>
+        <input type="submit" value="klik">
+    </form>
+    <div id="commentlist"></div>
+    <script>
+        document.forms["nameFrom"].onsubmit = function(){
+            event.preventDefault()
+            const username = document.forms["nameFrom"]["username"].value
+            const password = document.forms["nameFrom"]["password"].value
+            const commentList = document.getElementById("commentlist")
+
+            const list = document.createElement("p")
+            list.textContent = `${username} komen dari ${password}`
+            commentList.append(list)
+
+        document.forms["nameFrom"].riset
+        }
+    </script>
+</body>
+</html>

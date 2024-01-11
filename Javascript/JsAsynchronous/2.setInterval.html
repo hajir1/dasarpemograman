@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="time"></p>
+
+    <script>
+        const time = document.getElementById("time")
+        const setTime = () =>{
+            const waktu =  new Date()
+            const tahun = waktu.getFullYear() 
+            const bulan = waktu.getMonth()
+            const hari = waktu.getDay()
+            const jam = waktu.getHours()
+            const menite = waktu.getMinutes()
+            const detik = waktu.getSeconds()
+            time.textContent =  `Tahun :${tahun} Bulan :${bulan}hari :${hari} Jam :${jam} menite ${menite} detik ${detik}`
+
+        } 
+        setInterval(setTime ,1000)
+    </script>
+</body>
+</html>

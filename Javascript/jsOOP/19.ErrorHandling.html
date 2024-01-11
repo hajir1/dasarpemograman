@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class MathUtil{
+            static sum(...values){
+                if(values.length === 0){
+                    throw new Error ("Angka Tidak Boleh 0")
+                }
+                let total = 0
+                for (const number of values) {
+                    total += number
+                }
+                return total
+            }
+        }
+        try{
+        console.log(MathUtil.sum())
+        }catch(data){ //kondisi try terpenuhi
+            console.log(`Terjadi Error : ${data.message}`)
+        }finally{
+            console.log("Program selesai")
+        }
+
+
+
+        {
+            class counterData{
+            #counter = 0
+            next(angka){
+                let total = 1
+                try{
+                    return this.#counter 
+                }finally{
+                    this.#counter++
+                }
+            }
+        }
+        const counter = new counterData()
+        console.log(counter.next())
+        console.log(counter.next())
+        console.log(counter.next())
+        console.log(counter.next())
+        console.log(counter.next())
+        
+        }
+        </script>
+</body>
+</html>

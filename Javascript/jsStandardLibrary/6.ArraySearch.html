@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let source = [1,2,3,4,5,1,2,3,4,5]
+
+        console.log(source.find(value => value > 4)) //mencari value lebih
+        console.log(source.findIndex(value => value > 4)) //index
+        console.log(source.includes(7)) //false
+        console.log(source.indexOf(4))
+        console.log(source.lastIndexOf(4))
+
+
+
+        // filterisasi
+        let sourceData = [1,2,3,4,5,6,7,8,9,10]
+
+        const genap = sourceData.filter(value => value %2 === 0)
+        const ganjil = sourceData.filter(value => value %2 === 1)
+        
+        console.log(sourceData)
+        console.log(genap)
+        console.log(ganjil)
+
+
+    </script>
+</body>
+</html>

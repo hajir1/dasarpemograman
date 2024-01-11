@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Emloyee {
+
+        }
+        class Manager extends Emloyee{
+
+        }
+        const otong = new Emloyee() 
+        const ucup = new Manager()
+        
+        console.log(otong instanceof Emloyee) //true
+        console.log(otong instanceof Manager) //false
+        console.log(ucup instanceof Emloyee) //true (turunan)
+        console.log(ucup instanceof Manager) //true
+    </script>
+</body>
+</html>

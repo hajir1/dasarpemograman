@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+        import  {SayHello as s,Manager as m,names as n} from  "../moduleClass.js"
+
+
+        const sayhello = new s("Muhajir")
+        sayhello.sayhello("Usam")
+
+        const manager = new m ("Otong")
+        manager.sayhello("surotong")
+
+        console.log(n)
+    </script>
+</body>
+</html>

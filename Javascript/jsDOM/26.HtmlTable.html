@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="orderVenue" border="1">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Harga</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sandal</td>
+                <td>100000</td>
+            </tr>
+            <tr>
+                <td>baju</td>
+                <td>200000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>Jumlah</td>
+            </tr>
+        </tfoot>
+    </table>
+    <script>
+        const list = document.getElementById("orderVenue")
+        console.log(list.tHead)
+        console.log(list.tBodies)
+        console.log(list.tFoot)
+        console.log(list.rows)
+    </script>
+</body>
+</html>

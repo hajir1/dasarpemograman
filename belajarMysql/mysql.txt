@@ -1,0 +1,45 @@
+tipe data bersifat kolom , artinya bila kolom diisi int , semua data wajib int
+1.tipe data number 
+- interger(bulat)
+- float(pecahan) dan double(pecahan  x2 )
+apabila data diisi unsigned tidak bisa diisi (-) artinya 0 - () 
+number atribute 
+	contoh INT(60) data hanya berisi 60
+
+2.tipe data string
+- char
+- varchar
+maksimum nilai varchar 65355
+bisa diisi dengan CHAR(10) data hanya bisa diisi 10
+apabila data tidak diisi maka char akan tetep mengeksekusi 10 beda dengan varchar
+-text
+bisa diisi angka bisa diisi huruf cocok untuk deskripsi
+-enum (bersifat boolean)
+ENUM('pria','wanita',1)
+
+3.tipe data date and time
+date     =yyyy-mm-dd
+datetime =yyyy-mm-dd hh:mm:ss
+time     =hh:mm:ss
+years    =yyyy
+
+4.tipe data boolean
+
+modify digunakan untuk mengubah tipe data kolom di tabel
+null adalah data yang tidak ada isinya(value) jika ingin ada isinya isi dengan NOT NULL
+dan ketika tidak diisi kita bisa menambah default untuk mengisi
+
+
+TRUNCATE (nama tabel) digunakan untuk menghapus semua data di dalam table;
+DROP TABLE (nama barang) digunakan untuk menghapus tabel 
+
+apabila ingin melihat id terakhr dengan function LAST_INSERT_ID()
+
+
+foreign key
+RESTRICT ON DELETE(ditolak) dan ON UPDATE(ditolak)
+CASCADE ON DELETE(data akan dihapus) dan ON UPDATE(data akan ikut diubah)
+NO ACTION ON DELETE(data dibiarkan) dan ON UPDATE(data dibiarkan)
+SET NULL ON DELETE(diubah menjadi null) ON UPDATE (data menjadi null)
+
+

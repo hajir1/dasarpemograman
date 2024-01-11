@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let parameter;
+    let data = parameter
+    if(data === undefined || data == null){
+        data = "Hallo world"
+    }
+    document.writeln(data)
+    document.writeln("<br>")
+    
+    // menggunakan nullish coalising operator
+    data = parameter??"say hello"
+    document.writeln(data)
+
+</script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Babylonica&family=Fjalla+One&family=Julee&family=Satisfy&family=Shadows+Into+Light&family=Source+Code+Pro:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    .content1 {
+      width: 140px;
+      border: 1px solid grey;
+      border-radius: 4px;
+      padding: 6px;
+      font-size: 14px;
+      height: 24px;
+      margin-bottom: 10px;
+    }
+    .content1:focus {
+      border: 1px solid black;
+      outline: none;
+      color: black;
+    }
+    div{
+        border: 1px solid black;
+        padding: 10px;
+    }
+    p {
+      font-family: "Fjalla One", sans-serif;
+      margin: 0 0 6px 0;
+    }
+    .content2 {
+      border-radius: 4px;
+      width: 300px;
+      border: 1px solid black;
+      height: 24px;
+    }
+    .deskripsi2 {
+      margin: 16px 0;
+      font-size: 10px;
+      font-family: verdana;
+    }
+    .button2 {
+      width: 300px;
+      height: 36px;
+      color: white;
+      background-color: blue;
+      outline: none;
+      border: none;
+      font-family: "Fjalla One", sans-serif;
+      border-radius: 24px;
+    }
+    .google{
+        margin-top: 12px;
+    }
+    .google input{
+        width: 400px;
+        height: 26px;
+        border-radius: 20px;
+        outline: none;
+        border: 1px solid grey;
+        padding: 10px;
+        box-shadow: 1px 1px 10px rgba(151, 156, 151 ,0.6);
+    }
+    .profil{
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+    }
+    .profil img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit:cover;
+        object-position: left;
+    }
+    .profil p{
+        margin: 0 12px;
+        font-family: verdana;
+    }
+    .profil button{
+        width: 80px;
+        height: 32px;
+        color: white;
+        font-weight: bold;
+        background-color: rgb(91, 91, 240);
+        border-radius: 16px;
+        outline: none;
+        border: none;
+        margin-left: 50px;
+    }
+  </style>
+  <body>
+    <input type="text" class="content1" placeholder="Search" name="" id="" />
+    <br />
+    <div>
+      <p>Email</p>
+      <input type="email" name="" id="" class="content2" />
+      <p class="deskripsi2">
+        By Clicking Agree & Join ,you Agree to the Privacy Police
+      </p>
+      <button class="button2" type="button">Agree & Join</button>
+    </div>
+    <div class="google">
+        <input type="text" name="" placeholder="Search Goggle or type a URL" id="">
+    </div>
+    <div class="profil">
+        <img src="gambar/PROFIL.png" alt="">
+        <p>What's happening</p>
+        <button>Tweet</button>
+    </div>
+  </body>
+</html>

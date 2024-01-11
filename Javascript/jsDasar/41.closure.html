@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function closureAdder(value){
+            const result = "UsamMuhajir"
+            function add(param){
+                return param + value
+            }
+            return add
+        }
+
+        const addUser = closureAdder(20)
+        console.log(addUser(3))
+    </script>
+</body>
+</html>

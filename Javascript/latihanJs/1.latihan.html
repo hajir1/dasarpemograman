@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<body>
+
+
+<button id="myBtn">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+const demo = document.getElementById("demo")
+document.getElementById("myBtn").addEventListener("click",function(){
+const date = new Date()
+const tahun = date.getFullYear()
+const bulan = date.getMonth()
+const hari = date.getDate()
+demo.innerHTML = `${tahun} ${bulan} ${hari}`
+});
+
+</script>
+
+</body>
+</html> 
+
+</body>
+</html>

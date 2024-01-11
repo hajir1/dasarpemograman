@@ -1,0 +1,7 @@
+
+const token = '6699551235:AAE_dIZHjEOWDLQHV3E4KE_F0o723pcCIY4'
+;
+const chatId = '1557468753';
+
+
+https://api.telegram.org/bot6080079780:AAE7Q-rNG75himjuUfQSd45fpYCt2iq8Cic/sendMessage?parse_mode=markdown&chat_id=6621693441&text=Berhasil

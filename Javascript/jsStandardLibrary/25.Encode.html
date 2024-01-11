@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        {
+            const url= "http://contoh.com/?name=Usam Muhajir"
+        console.log(url)
+        
+        const encoded = encodeURI(url)
+        console.log(encoded)
+
+        const decoded = decodeURI(encoded)
+        console.log(decoded)
+        }
+
+        {
+            const url= "http://contoh.com/?name="
+            const value = "Usam&Muhajir="
+
+            
+            const encoded = encodeURIComponent(value)
+            console.log(value + encoded)
+
+            const decoded = decodeURIComponent(encoded)
+            console.log(decoded)
+        }
+    </script>
+</body>
+</html>

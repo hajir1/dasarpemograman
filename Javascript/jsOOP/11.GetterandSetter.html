@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class GetterAndSetter {
+            constructor(firstName , lastname){
+                this.firstName = firstName
+                this.lastname = lastname
+            }
+            get fullName(){
+                return `${this.firstName} ${this.lastname}`
+            }
+            set fullName(value){
+                const result = value.split(" ")
+                this.firstName = result[0]
+                this.lastname = result[1]
+            }
+        }
+        const getValue = new GetterAndSetter("Usam","Muhajir")
+        console.log(getValue)
+        console.log(getValue.fullName)
+        
+        getValue.fullName ="Otong Surotong"
+        console.log(getValue)
+
+    </script>
+</body>
+</html>

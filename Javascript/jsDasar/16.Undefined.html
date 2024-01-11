@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // test undefined
+        let name;
+        if(name === undefined){
+            document.writeln("UNDEFINED")
+        }else{
+            document.writeln("DEFINED")
+        }
+        // mengecek array
+        const nama = ["Usam","Muhajir"]
+        if(nama[1] === undefined){
+            document.writeln("UNDEFINED")
+        }else{
+            document.writeln("DEFINED")
+        }
+        // mengecek objek
+        const person = {
+            "name" : "hajir"
+        }
+        if(person.name === undefined){
+            document.writeln("UNDEFINED")
+        }else{
+            document.writeln(`defined ${person.name}`)
+        }
+</script>
+</body>
+</html>

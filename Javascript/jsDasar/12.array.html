@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arrayNama =["Usam","Muhajir",1,true]
+        let arrayKosong = []
+        document.writeln(`ini ${arrayKosong}`)
+        document.writeln("<br>")
+        // menambah data
+        arrayKosong.push("Usam")
+        document.writeln(arrayKosong)
+        document.writeln("<br>")
+        // mengubah data
+        arrayKosong[0] = "hajir"
+        document.writeln(arrayKosong)
+        document.writeln("<br>")
+        // mendelete data
+        // delete tidak permanen
+        delete arrayKosong[0]
+        document.writeln(arrayKosong)
+        document.writeln("<br>")
+
+        // array dalam array
+        arrayNama.push(["Firstname","Lastname"])
+        console.log(arrayNama)
+    </script>
+</body>
+</html>

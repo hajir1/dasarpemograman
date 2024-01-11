@@ -1,0 +1,12 @@
+Sun Oct 01 2023 11:44:59 GMT+0700 (Western Indonesia Time) ERROR error.message
+Sun Oct 01 2023 11:48:13 GMT+0700 (Western Indonesia Time) ERROR undefined
+Sun Oct 01 2023 11:49:26 GMT+0700 (Western Indonesia Time) ERROR undefined
+Sun Oct 01 2023 11:50:00 GMT+0700 (Western Indonesia Time) ERROR uncaughtException: data kosong
+Error: data kosong
+    at file:///C:/xampp/htdocs/belajarjsupdate/nodejsUpdate/logger/telegram.mjs:40:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+Sun Oct 01 2023 11:50:56 GMT+0700 (Western Indonesia Time) ERROR test
+Tue Oct 03 2023 14:10:20 GMT+0700 (Western Indonesia Time) ERROR test
+Tue Oct 03 2023 14:10:26 GMT+0700 (Western Indonesia Time) ERROR test
+Tue Oct 03 2023 14:10:50 GMT+0700 (Western Indonesia Time) ERROR test
+Tue Oct 03 2023 14:11:12 GMT+0700 (Western Indonesia Time) ERROR test

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const target = {
+            firstname:"Otong", 
+            lastName :"Surotong"
+        }
+        const source = {
+            firstname:"Ucup"
+        }
+
+        Object.assign(target , source )
+        console.log(target)
+        console.log(source)
+    
+    
+        {
+        // Hasil Array 
+        const person = {
+            firstname:"Usam",
+            lastName:"Muhajir"
+        }
+        // mengambil value
+        const value = Object.values(person)
+        
+        // property
+        const property = Object.getOwnPropertyNames(person)
+
+        console.log(`Property ${property} values ${value}`)
+    
+    }    
+    </script>
+</body>
+</html>

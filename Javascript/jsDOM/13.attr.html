@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="../gambar/PROFIL.png" id="logo" alt="Profil" srcset="">
+    <script>
+{
+    const logo =document.getElementById("logo")
+        const source = logo.getAttributeNode("src")
+        console.log(source.name)
+        console.log(source.value)
+
+}
+{
+    // mengambil value
+    const logos =document.getElementById("logo")
+    const source = logos.getAttribute("src")
+    console.log(source)
+    
+}
+
+    </script>
+</body>
+</html>

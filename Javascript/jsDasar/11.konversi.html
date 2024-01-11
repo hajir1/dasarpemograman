@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        data = "20"
+        const value1 = parseInt(data)
+        const value2 = 2
+        const sum = value1 + value2
+        document.writeln(`${sum}`)
+
+        // parse float
+        // parse int
+        // number
+        // string
+        document.writeln("<br>")
+        const angka1 = 2
+        const angka2 = 2
+        let total = angka1.toString() + angka2
+        document.writeln(`${total}`)
+        // not a number
+        // parseInt dan parseFloat mentolerir kesalahan akhir beda dengan NUmber
+        document.writeln(`${parseInt("salah")}`)
+        document.writeln(`${parseFloat("1.2salah")}`)
+        // error
+        document.writeln(`${Number("1.2salah")}`)
+
+        // nan tidak bisa di operasikan
+        // pengecekan NaN
+        document.writeln("<br>")
+        document.writeln(`${isNaN(angka2)}`)
+        document.writeln("<br>")
+        document.writeln(`${isNaN("angka2")}`)
+    </script>
+</body>
+</html>

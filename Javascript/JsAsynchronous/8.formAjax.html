@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form >
+        <label for="username">Username
+        <input type="text" id="username" value="" name="username">
+    </label>
+        <br>
+        <label for="username">password
+        <input type="text" id="password" value="" name="username">
+    </label>
+        <br>
+        <input type="button" value="submit" id="login">
+    </form>
+    <p id="response"></p>
+    <script>
+        function doLogin(){
+            const ajax = new XMLHttpRequest()
+            ajax.open("POST","https://eotsgnqzqnpgkzh.m.pipedream.net")
+            ajax.setRequestHeader("Content-Type","application/x-www-form-urlencoded")
+            ajax.onload = function(){
+                const response = document.querySelector("#response")
+                if(ajax.status === 200){
+                    response.textContent = ajax.responseType
+                }else{
+                    console.log("error")
+                }
+            }
+            
+            const form = new URLSearchParams()
+            form.append("username",document.getElementById("username"))
+            form.append("password",document.getElementById("password"))
+            ajax.send()
+        }
+        document.getElementById("login").onclick = doLogin
+    </script>
+</body>
+</html>

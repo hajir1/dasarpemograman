@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 100%;
+  background: black;
+}
+:root{
+--ikifont :  'Source Code Pro', monospace;
+--font2 : font-family: 'Satisfy', cursive;
+--font3 : font-family: 'Babylonica', cursive;
+}
+::selection{
+  background: yellow;
+}
+.container{
+text-align: center;margin-top: 7rem;}
+.container span{
+  color:aqua;
+  font-family: 'Satisfy', cursive;
+  text-shadow: 0 0 12px wheat,0 0 12px green,0 0 1px white, 0 0 4rem green,0 0 4rem grey;
+  font-size: 5rem;
+}
+section{
+  width: 100%;
+} 
+.container-love{
+  display: block;
+  margin: auto;
+  width: 35rem;
+  padding: 1rem;
+  height: 20rem;
+  position: relative;
+  border: 1px solid white;
+}
+
+

@@ -1,0 +1,25 @@
+@keyframes Box {
+    0%{
+        background-color: rgb(52, 235, 235);
+    }
+    25%{
+        background-color: rgb(52, 205, 235);
+    }
+    50%{
+        background-color:rgb( 52, 171, 235);
+    }
+    75%{
+        background-color: rgb( 52, 153, 235);
+    }
+    100%{
+        background-color:rgb(  52, 122, 235);
+    }
+}
+.container-headers{
+    animation: Box 100s alternate infinite;
+}
+
+.row-one h2{
+    font-family:'Kablammo', cursive;;
+}
+

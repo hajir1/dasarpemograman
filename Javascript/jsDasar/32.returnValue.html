@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sayHello(firstName,lastName){
+            const say = `hello ${firstName} ${lastName}`
+            return say
+        }
+        const result = sayHello("Usam","Muhajir")
+        document.writeln(result)
+
+
+        function getFinalValuez(angka){
+            if(angka > 90){
+                return "A"
+            }else if(angka > 60){
+                return "B"
+            }else{
+                return "Jelek"
+            }
+        }
+        const nilai = getFinalValuez(111);
+        document.writeln(`nilai ${nilai}`)
+
+
+        function isContains(array,finalValue){
+            for(const angka of array){
+                if(angka === finalValue){
+                    return true
+                }
+            }
+            return false
+        }
+        const x = isContains([1,2,3,4,5,6,7,8,9],2)
+        document.writeln(`${x}`)
+    </script>
+</body>
+</html>

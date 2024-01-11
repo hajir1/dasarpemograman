@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        {
+            const regex1 = /Usam/
+            const regex2 = new RegExp ("Usam")
+            const regex3 = new RegExp (/Usam/)
+
+            // i g m ^(di awal) .(e.a) ek[aiueo]semua
+        }
+        {
+            const names = "Usam Muhajir Otong Surotong"
+            const regex = /a/ //per huruf
+            console.log(regex.exec(names))
+            console.log(regex.exec("Tidak Ada"))
+            // mencari data
+            
+            
+            console.log(regex.test(names))
+            console.log(regex.test("Tidak ada"))
+            // Melihat data
+        }
+        {
+            const names = "Usam Muhajir\n usam Surucup\n Otong Surotong"
+            const regex1 = /^u/igm
+            let result;
+            while((result =  regex1.exec(names)) !== null){
+                console.log(result)
+            }
+        }
+    </script>
+</body>
+</html>

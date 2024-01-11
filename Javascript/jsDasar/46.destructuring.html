@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        {
+            const names = ["Ucup","Otong","Usam","Muhajir"]
+
+            let [ucup,otong,...lainnya] = names
+            console.log(ucup)
+            console.log(otong)
+            console.log(lainnya)
+        }
+
+        {
+            const person = {
+                fullName : "UsamMuhajir",
+                address:{
+                    kabupaten :"Malang",
+                    country:"indonesia",
+                    jln:"Turen"
+                },
+                hobi :{
+                    pertama :"sepakBola",
+                    kedua :"Puisi"
+                },
+                umur: 17
+            }
+            let{fullName,address:{kabupaten,country,jln},...others} = person
+            
+            
+            console.log(person.address)
+            console.log(person.address.kabupaten)
+            console.log(others)
+        }
+
+        
+
+    </script>
+</body>
+</html>

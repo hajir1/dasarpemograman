@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="response"></p>
+    <script>
+        function displayAjax(value){
+            const response = document.getElementById("response")
+            response.textContent = value.nama
+        }
+
+        const ajax = new XMLHttpRequest()
+        ajax.open("GET","../belajar.json")
+        ajax.addEventListener("load",function(){
+            if(ajax.status===200){
+                const json = JSON.parse(ajax.responseText)
+                displayAjax(json)
+            }else{
+                displayAjax({
+                    nama : `Error Not found ${ajax.status}`
+                })
+            }
+        })
+        ajax.send()
+    </script>
+</body>
+</html>

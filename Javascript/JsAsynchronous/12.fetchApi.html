@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+        <input type="text" id="username" placeholder="username">
+        <input type="text" id="password" placeholder="password">
+        <input type="button" id="button" value="submit">
+    </form>
+    <h2 id="response"></h2>
+    <script>
+        function doLogin(){
+            const ajax = new Request("https://eog51e76f1wwz2.m.pipedream.net",{
+                method:"POST",
+                headers:{
+                    "Content-Type":"application/json",
+                    "Accept":"application/json"
+                },
+                body:JSON.stringify({
+                    username:document.getElementById("username").value,
+                    password:document.getElementById("password").value
+                }),
+            })
+
+            const response = fetch(ajax) 
+            response
+            .then(sjsjs => sjsjs.json())
+            .then(json =>{document.getElementById("response").textContent = json.success})    
+            .catch(error =>{document.getElementById("response").textContent = error})    
+        }
+        document.getElementById("button").onclick = doLogin
+    </script>
+</body>
+</html>

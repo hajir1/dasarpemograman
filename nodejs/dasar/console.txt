@@ -1,0 +1,8 @@
+hello hajir
+error
+┌──────────┬──────────┐
+│ (index)  │  Values  │
+├──────────┼──────────┤
+│ firtname │  'Usam'  │
+│ lastname │ 'muhaji' │
+└──────────┴──────────┘

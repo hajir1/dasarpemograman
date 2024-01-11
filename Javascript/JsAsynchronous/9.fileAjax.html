@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="file" id="file">
+        <input type="button" value="submit" id="submit">
+    </form>
+    <h1 id="response"></h1>
+    <script>
+        function doLogin(){
+            const ajax = new XMLHttpRequest()
+            ajax.open("POST","https://eotsgnqzqnpgkzh.m.pipedream.net")
+            ajax.onload = function(){
+                const respon = document.getElementById("response")
+                respon.textContent = ajax.responseText
+            }
+            const dataFile = new FormData()
+            const file = document.getElementById("file").files
+            const firstfile = file.item(0)
+            dataFile.append("file",firstfile)
+            ajax.send(dataFile)
+        }
+        document.getElementById("submit").onclick = doLogin
+    </script>
+</body>
+</html>

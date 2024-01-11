@@ -1,0 +1,13 @@
+{
+    "name": "user/mvc",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "User\\Mvc\\": "src/"
+        }
+    },
+    "require": {},
+    "scripts": {
+        "dev":"php -S localhost:8080"
+    }
+}

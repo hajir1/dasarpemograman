@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class PublicClassField{
+            firstName
+            lastName
+            balance = 0
+            constructor(firstName,lastName){
+                this.firstName = firstName
+                this.lastName = lastName
+            }
+            sayHello(names){
+                console.log(`Hello ${this.firstName} ${this.lastName}`)
+            }
+        }
+
+        const classField = new PublicClassField ()
+        classField.firstName =" Otong"
+        classField.lastName =" Surotong"
+        classField.sayHello()
+        console.log(classField) 
+    </script>
+</body>
+</html>

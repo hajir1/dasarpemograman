@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       {
+         // destructuring menggunakan parameter
+         function personalNames({firstName,lastName}){
+            console.log(`hello ${firstName}  My Name Is ${lastName}`)
+        }
+
+        const person = {
+            firstName : "Usam",
+            lastName :"Muhajir"
+        }
+        personalNames(person)
+
+       }
+
+       
+       {
+         // destructuring array
+         function sum([first,last]){
+            return first + last
+        }
+        console.log(sum([10,20]))
+        console.log(sum([30,10]))
+
+
+       }
+        {
+            // default value dan perubahan Nama
+        const person = {
+            firstName : "Usam",
+            lastName :"Muhajir"
+        }
+        const{firstName:namaAwal,middleName="TidakAda",lastName} = person
+        console.info(namaAwal)    
+        console.info(middleName)
+        console.info(lastName)    
+        }
+    </script>
+</body>
+</html>

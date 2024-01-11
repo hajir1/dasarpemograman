@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pemanggilan Teks Secara Bertahap</title>
+  <script>
+    var texts = ["Halo", "Ini", "Adalah", "Contoh", "Pemanggilan", "Teks"];
+    var currentIndex = 0;
+
+    function displayText() {
+      var outputElement = document.getElementById("output");
+      outputElement.textContent = texts[currentIndex];
+      
+      currentIndex++;
+      if (currentIndex >= texts.length) {
+        currentIndex = 0; // Reset ke awal jika sudah mencapai akhir array
+      }
+    }
+
+    setInterval(displayText, 1000); // Memanggil displayText setiap 1 detik
+  </script>
+</head>
+<body>
+  <div id="output"></div>
+</body>
+</html>

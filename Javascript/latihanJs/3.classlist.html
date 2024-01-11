@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event onclick dengan CSS</title>
+  <style>
+    .highlight {
+      background-color: red;
+    }
+    .contens{
+        color: blue;
+    }
+  </style>
+  <script>
+    function handleClick() {
+      var element = document.getElementById("myElement");
+      element.classList.add("highlight","contens");
+    }
+  </script>
+</head>
+<body>
+  <div id="myElement">Ini adalah elemen yang akan diubah gaya CSS saat diklik.</div>
+  <button onclick="handleClick()">Klik Saya</button>
+</body>
+</html>

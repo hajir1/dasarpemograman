@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1696147462322" clover="3.2.0">
+  <project timestamp="1696147462322" name="All files">
+    <metrics statements="22" coveredstatements="22" conditionals="4" coveredconditionals="4" methods="7" coveredmethods="7" elements="33" coveredelements="33" complexity="0" loc="22" ncloc="22" packages="1" files="3" classes="3"/>
+    <file name="0.sayHello.js" path="C:\xampp\htdocs\belajarjsupdate\nodejsUpdate\unitTest\src\0.sayHello.js">
+      <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="3" count="3" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+    </file>
+    <file name="1.sum.js" path="C:\xampp\htdocs\belajarjsupdate\nodejsUpdate\unitTest\src\1.sum.js">
+      <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <line num="1" count="3" type="stmt"/>
+      <line num="2" count="4" type="stmt"/>
+      <line num="6" count="3" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="3" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="14" count="3" type="stmt"/>
+      <line num="15" count="2" type="stmt"/>
+      <line num="16" count="2" type="stmt"/>
+      <line num="17" count="8" type="stmt"/>
+      <line num="19" count="2" type="stmt"/>
+    </file>
+    <file name="2.async.js" path="C:\xampp\htdocs\belajarjsupdate\nodejsUpdate\unitTest\src\2.async.js">
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="3" type="stmt"/>
+      <line num="3" count="3" type="stmt"/>
+      <line num="4" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="5" count="2" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

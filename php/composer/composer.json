@@ -1,0 +1,17 @@
+{
+    "name": "user/composer",
+    "autoload": {
+        "psr-4": {
+            "Data\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "hajir"
+        }
+    ],
+    "require": {},
+    "scripts": {
+        "dev":"php -S localhost:8080"
+    }
+}

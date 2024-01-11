@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function sum(names ,...value){
+            let total = 0
+            for (const number of value) {
+                total += number
+            }
+            console.log(`${names} ${total}`)
+        }
+        sum("Jeruk",12,12,12,12,12)
+
+        const values = [10,10,10,10,10]
+        sum("Apel",...values)
+
+    </script>
+</body>
+</html>

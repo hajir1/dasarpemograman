@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person ={
+            "firstName":"Usam",
+            "midllename":undefined,
+            "lastName":"Muhajir"
+        }
+        // pengecekan objek
+        if("midllename" in person){
+            document.writeln(`hallo ${person.midllename}`)
+        }else{
+            document.writeln("Hallo")
+        }
+        document.writeln("<br>")
+        if("firstName" in person){
+            document.writeln(`hallo ${person.firstName}`)
+        }else{
+            document.writeln("Hallo")
+        }
+        // pengecekan array
+        document.writeln("<br>")
+        const data = [null ,"UsamMuhajir",null]
+        let result = 0 in data
+        document.writeln(`${result}`)
+    </script>
+</body>
+</html>

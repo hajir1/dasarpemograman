@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="first">satu</p>
+    <p id="second">dua</p>
+    <p class="third">tiga</p>
+    <script>
+        const data = document.querySelectorAll("*")
+        console.log(data)
+
+
+        const p = document.querySelectorAll("p")
+        console.log(p)
+        
+        // class
+        const attributes = document.querySelectorAll("[class]")
+        console.log(attributes)
+        
+        
+        // id
+        const ied = document.querySelectorAll("#second")
+        console.log(ied)
+    </script>
+</body>
+</html>

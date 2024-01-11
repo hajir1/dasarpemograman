@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Untuk Halaman Web</title>
+</head>
+<body>
+    <div id="qrcode"></div>
+
+    <script type="text/javascript">
+        // URL halaman web yang ingin Anda buat QR Code-nya
+        var url = "https://www.contoh.com";
+
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            text: url,
+            width: 128,
+            height: 128
+        });
+    </script>
+
+    <!-- Sertakan pustaka qrcode-generator -->
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</body>
+</html>

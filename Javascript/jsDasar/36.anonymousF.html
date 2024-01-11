@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const say = function (value1, value2) {
+        return value1 + value2;
+      };
+      console.log(say(10, 20));
+
+      function name(param) {
+        param("Usam");
+        param("Muhajir");
+      }
+      name(function (value) {
+        document.writeln(`Hello ${value}`);
+      });
+    </script>
+  </body>
+</html>

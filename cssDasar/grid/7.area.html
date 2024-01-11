@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 400px;
+        border: 1px solid black;
+        display: grid;
+        grid-template-areas: "header header header" "sidebar content content" "sidebar content content" "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4,3rem) ;
+      }
+      
+      .item {
+        width: 100%;
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .header{
+        background-color: blue;
+        grid-area: header;
+      }
+      .sidebar{
+        background-color: red;
+        grid-area: sidebar;
+      }
+      .content{
+        grid-area: content;
+      }
+      .footer{
+        grid-area: footer;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item header">1</div>
+      <div class="item sidebar">2</div>
+      <div class="item content">3</div>
+      <div class="item footer">4</div>
+    </div>
+  </body>
+</html>

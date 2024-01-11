@@ -1,0 +1,71 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model categories {
+  id   Int     @id @default(autoincrement())
+  nama String? @db.VarChar(100)
+}
+
+model customers {
+  id       Int        @id
+  nama     String     @db.VarChar(100)
+  email    String     @unique(map: "email") @db.VarChar(100)
+  phone    String     @unique(map: "phone") @db.VarChar(100)
+  komentar komentar[]
+  wallet   wallet?
+}
+
+model komentar {
+  id          Int       @id @default(autoincrement())
+  customer_id Int
+  title       String    @db.VarChar(100)
+  deskripsi   String?   @db.Text
+  customers   customers @relation(fields: [customer_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "id_comment_comment_fk")
+
+  @@index([customer_id], map: "id_comment_comment_fk")
+}
+
+model orders {
+  OrderID     Int        @id
+  CustomerID  Int?
+  OrderDate   DateTime?  @db.Date
+  TotalAmount Decimal?   @db.Decimal(10, 2)
+  pelanggan   pelanggan? @relation(fields: [CustomerID], references: [CustomerID], onDelete: NoAction, onUpdate: NoAction, map: "orders_ibfk_1")
+
+  @@index([CustomerID], map: "CustomerID")
+}
+
+model pelanggan {
+  CustomerID Int      @id
+  FirstName  String?  @db.VarChar(50)
+  LastName   String?  @db.VarChar(50)
+  Email      String?  @db.VarChar(100)
+  Phone      String?  @db.VarChar(15)
+  orders     orders[]
+}
+
+model products {
+  id       Int    @id @default(autoincrement())
+  nama     String @db.VarChar(100)
+  price    Int
+  stock    Int
+  category String @db.VarChar(100)
+}
+
+model sample {
+  id   String  @id @db.VarChar(200)
+  nama String? @db.VarChar(100)
+}
+
+model wallet {
+  id          Int       @id
+  balance     Int
+  customer_id Int       @unique(map: "customer_id")
+  customers   customers @relation(fields: [customer_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "wallet_customer_id_fk")
+}

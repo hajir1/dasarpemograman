@@ -1,0 +1,42 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model contacts {
+  id          Int      @id @default(autoincrement())
+  first_name  String   @db.VarChar(100)
+  last_name   String?  @db.VarChar(100)
+  email       String?  @db.VarChar(100)
+  phone       Int?
+  username_id String?  @db.VarChar(100)
+  adress      adress[]
+  users       users?   @relation(fields: [username_id], references: [username], onDelete: NoAction, onUpdate: NoAction, map: "username_contacts_fk")
+
+  @@index([username_id], map: "username_contacts_fk")
+}
+
+model users {
+  username  String     @id @db.VarChar(100)
+  passwords String     @db.VarChar(100)
+  name      String     @db.VarChar(100)
+  token     String?    @db.VarChar(100)
+  contacts  contacts[]
+}
+
+model adress {
+  id          Int       @id @default(autoincrement())
+  street      String?   @db.VarChar(100)
+  city        String?   @db.VarChar(100)
+  province    String?   @db.VarChar(100)
+  country     String?   @db.VarChar(100)
+  postal_name String?   @db.VarChar(100)
+  contact_id  Int?
+  contacts    contacts? @relation(fields: [contact_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "contact_id_adress_fk")
+
+  @@index([contact_id], map: "contact_id_adress_fk")
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="content"></p>
+    <script>
+        const ajax = new XMLHttpRequest()
+        ajax.open("GET","../belajar.json")
+        ajax.addEventListener("load",function(){
+            const json = JSON.parse(ajax.responseText)
+            const content = document.getElementById("content")
+            content.textContent = json.nama
+        })
+        ajax.send()
+    </script>
+</body>
+</html>

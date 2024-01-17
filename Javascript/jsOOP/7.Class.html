@@ -2,33 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <script>
-        class Person {
+        class Person{
             constructor(firstName){
                 this.firstName = firstName
-                this.fullName = function(lastname){
-                    console.log(`${this.firstName}${lastname}`) //instance
-                }
-
             }
-            sayHello(name){
-                console.log(`Hello ${name}, My Name Is ${this.firstName}`) //prototype
+            sayHello(lastName){
+                console.log(`hello ${lastName} my name is ${this.firstName}`)
             }
         }
 
-        const otong = new Person("Otong")
-        otong.fullName("Surotong")
-        console.log(otong)
+        const hajir = new Person("hajir")
+        hajir.sayHello("usammuhajir")
         
-        
-        const ucup = new Person("Ucup")
-        ucup.sayHello("Surucup")
-        console.log(ucup)
     </script>
 </body>
 </html>

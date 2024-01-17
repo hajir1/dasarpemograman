@@ -9,9 +9,9 @@
 <body>
     <script>
        class ValidationError extends Error{
-        constructor(message , names){
+        constructor(message , field){
             super(message)
-            this.nama = names
+            this.field = field
         }
        }
        class MathUtil{
@@ -28,11 +28,11 @@
        }
        try{
             console.log(MathUtil.sum())
-       }catch(names){
-            if(names instanceof ValidationError){
-                console.log(`Error di ${names.nama} Pesan ${names.message}`)
+       }catch(error){
+            if(error instanceof ValidationError){
+                console.log(`Error di ${error.message} Pesan ${error.field}`)
             }else{
-                console.log(`${names.message}`)
+                console.log(`${error.message}`)
             }
        }finally{
             console.log(`Program Selesai`)

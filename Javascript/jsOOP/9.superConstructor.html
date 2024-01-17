@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        class Employee {
-            constructor(firstName){
-                this.firstname = firstName
-            }
-            sayHello(names){
-                console.log(`hello ${names}, Saya Employee ${this.firstname}`)
-            }
+      class Employee {
+        constructor(firstName) {
+          this.firstName = firstName;
         }
-
-
-        class Manager extends Employee{
-            constructor(firstName,lastName){
-                super(firstName)
-                this.lastname = lastName
-            }
+        sayHello(name) {
+          console.log(`hello ${name} my name is ${this.firstName}`);
         }
-        const otong = new Employee("Otong")
-        otong.sayHello("Surotong")
+      }
+      class Manager extends Employee {
+        constructor(firstName, lastName) {
+          super(firstName);
+          this.lastName = lastName;
+        }
+        // sayHello(name) {
+        //   console.log(
+        //     `hello ${name} my name is ${this.firstName} ${this.lastName}`
+        //   );
+        // }
+      }
+      const employee = new Employee("ucup")
+      employee.sayHello("hajir")
+      console.log(employee)
+      const manager = new Manager("otong","surotong")
+      manager.sayHello("hajir")
+      console.log(manager)
 
-        const ucup = new Manager("Ucup","Surucup")
-        ucup.sayHello()
-
-        console.log(otong)
-        console.log(ucup)
-</script>
-</body>
+    </script>
+  </body>
 </html>

@@ -8,25 +8,23 @@
 </head>
 <body>
     <script>
-        class Employee {
-            sayHello(names){
-                console.log(`Hello Employee ${names} I ${this.firstName}`)
-            }
-            }
-
-        class Manager extends Employee{
-            sayHello(names){
-                console.log(`Hello Employee ${names} I ${this.firstName}`)
-            }
+      class Employee {
+        sayHello(name){
+            console.log(`hello ${name} my name is ${this.name}`)
         }
-        const employee = new Employee("Otong")
-        employee.firstName ="Surotong"
+      }
+      class Manager extends Employee{
         
-        const manager = new Manager("Ucup")
-        manager.firstName = "Surucup"
-
-        console.log(employee)
-        console.log(manager)
+      } 
+      const employee = new Employee()
+      employee.name = "ucup"
+      employee.sayHello("surucup")
+      console.log(employee)
+      
+      const manager = new Manager()
+      manager.name = "otong"
+      manager.sayHello("surotong")
+      console.log(manager)
     </script>
 </body>
 </html>
